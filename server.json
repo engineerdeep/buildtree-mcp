@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.engineerdeep/buildtree",
+  "description": "Upload Android and iOS builds to buildtree and get install links, QR codes and tester feedback.",
+  "version": "0.1.1",
+  "websiteUrl": "https://buildtree.sh/docs/mcp",
+  "repository": {
+    "url": "https://github.com/engineerdeep/buildtree-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@buildtree/mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BUILDTREE_TOKEN",
+          "description": "API token from the buildtree dashboard (optional; the buildtree_login tool signs in interactively otherwise).",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "BUILDTREE_API_URL",
+          "description": "API origin. Defaults to https://buildtree.sh.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}
