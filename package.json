@@ -1,0 +1,61 @@
+{
+  "name": "@buildtree/mcp",
+  "version": "0.1.1",
+  "private": true,
+  "description": "MCP server for buildtree: let AI coding agents configure buildtree, upload mobile builds, and hand back install links and QR codes.",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "cursor",
+    "mobile",
+    "apk",
+    "ipa",
+    "qa",
+    "build-distribution",
+    "buildtree"
+  ],
+  "homepage": "https://buildtree.sh/docs/mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/engineerdeep/buildtree-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/engineerdeep/buildtree-mcp/issues",
+    "email": "hello@buildtree.sh"
+  },
+  "license": "MIT",
+  "author": "buildtree <hello@buildtree.sh>",
+  "type": "module",
+  "bin": {
+    "buildtree-mcp": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "mcpName": "io.github.engineerdeep/buildtree",
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.1.0",
+    "@trpc/client": "^11.0.0",
+    "app-info-parser": "^1.1.6",
+    "conf": "^13.1.0",
+    "open": "^10.1.0",
+    "qrcode": "^1.5.4",
+    "superjson": "^2.2.2",
+    "zod": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/qrcode": "^1.5.6",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}
