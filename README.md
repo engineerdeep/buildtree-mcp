@@ -1,6 +1,7 @@
 # buildtree MCP server
 
 [![npm](https://img.shields.io/npm/v/@buildtree/mcp)](https://www.npmjs.com/package/@buildtree/mcp)
+[![buildtree MCP server on Glama](https://glama.ai/mcp/servers/engineerdeep/buildtree-mcp/badges/score.svg)](https://glama.ai/mcp/servers/engineerdeep/buildtree-mcp)
 
 MCP server for [buildtree](https://buildtree.sh), the fastest way to share Android and iOS builds with testers. Let your AI coding agent set up buildtree for your app, run the build, upload the `.apk` or `.ipa`, and hand you an install link and QR code to share. It can also read the feedback and screenshots testers send back.
 
