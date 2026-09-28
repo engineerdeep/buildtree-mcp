@@ -1,6 +1,6 @@
 {
   "name": "@buildtree/mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "description": "MCP server for buildtree: let AI coding agents configure buildtree, upload mobile builds, and hand back install links and QR codes.",
   "keywords": [
